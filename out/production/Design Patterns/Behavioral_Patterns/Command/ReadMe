@@ -1,0 +1,14 @@
+Command is a behavioral design pattern that turns a request
+into a stand-alone object that contains all information about
+the request. This transformation lets you parameterize
+methods with different requests, delay or queue a request’s
+execution, and support undoable operations.
+
+
+-------------------------------------------------------------------------------------------
+Example:
+In this scenario, the Text Editor Application employs commands such as copy, paste, cut, and undo,
+which are encapsulated within Command objects. Each command knows how to perform a specific operation on the Editor
+object and supports an undo capability. This pattern decouples the invoker (the Application) from the receiver (the Editor)
+by introducing an abstract Command class and concrete implementations for each operation. By doing so, it enables extensibility,
+maintainability, and flexibility in managing user interactions.

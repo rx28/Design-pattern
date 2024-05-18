@@ -1,0 +1,13 @@
+Observer is a behavioral design pattern that lets you define a
+subscription mechanism to notify multiple objects about any
+events that happen to the object they’re observing.
+---------------------------------------------------------------------------------
+Example:
+
+In the city of Observerville, avid readers Alice, Bob, and Carol eagerly await
+updates from BookBuzz Publishing House. Using the Observer pattern, BookBuzz
+notifies its subscribers about new book releases and literary events. When BookBuzz
+announces a mystery novel, Alice gets a tailored notification about her favorite genre,
+while Bob receives updates on science fiction, and Carol on historical fiction. Through this pattern,
+BookBuzz effectively keeps its readers engaged and connected, creating a vibrant literary community in
+Observerville.

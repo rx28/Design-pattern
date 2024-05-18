@@ -1,0 +1,20 @@
+Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to
+produce different types and representations of an object using the same construction code.
+
+----------------------------------------------------------------------------
+Example:
+Imagine you need to construct complex objects in your program, like cars with various features such as seats, engines,
+and GPS systems, along with their corresponding manuals. Now, manually creating these objects with multiple constructors or
+setter methods can quickly become cumbersome and error-prone, especially as the complexity of the objects increases.
+
+Here's where the Builder design pattern comes to the rescue. It provides a way to construct objects step by step, allowing
+you to specify different configurations for the objects without needing a plethora of constructors or setter methods.
+
+In our example, we've implemented the Builder pattern to construct cars and their manuals. Instead of directly creating a car or
+manual object and setting each attribute individually, we have separate `CarBuilder` and `CarManualBuilder` classes that implement a
+common `Builder` interface. These builder classes allow us to set specific attributes of a car or manual one at a time.
+
+The `Director` class acts as a conductor, coordinating the construction process. It takes a builder object and guides it through the necessary
+steps to build a specific type of object. In our case, the `Director` constructs a sports car with predefined attributes.
+By using the Builder pattern, we maintain a clear separation between the construction process and the actual objects being constructed.
+This not only simplifies object creation but also enhances code readability and maintainability. Additionally, it allows for the creation of objects with varying configurations, making the code more flexible and adaptable to changes in requirements.

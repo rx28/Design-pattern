@@ -1,0 +1,7 @@
+Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on
+their classes.
+
+---------------------------------------------------------------------------
+Example:
+In this example, the Prototype pattern lets you produce exact copies of geometric objects, without coupling the code to their
+classes.

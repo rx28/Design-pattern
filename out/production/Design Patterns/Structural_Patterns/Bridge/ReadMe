@@ -1,0 +1,8 @@
+Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two separate
+hierarchies—abstraction and implementation—which can be developed independently of each other.
+
+-----------------------------------------------------------------------------------------------
+Example:
+This example illustrates how the Bridge pattern can help divide the monolithic code of an app that manages devices and
+their remote controls.
+The Device classes act as the implementation, whereas the Remote act as the abstraction.

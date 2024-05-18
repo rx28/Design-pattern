@@ -1,0 +1,22 @@
+Proxy is a structural design pattern that lets you provide a
+substitute or placeholder for another object. A proxy controls
+access to the original object, allowing you to perform
+something either before or after the request gets through to
+the original object.
+
+
+--------------------------------------------------------------------------------
+Example:
+The provided code demonstrates the implementation of the Proxy design pattern in Java. Here's a short summary:
+
+1. `ThirdPartyYoutTubeLib` is an interface that defines the operations for listing videos, getting video information, and downloading videos.
+
+2. `ThirdPartyYoutubeClass` is a concrete implementation of `ThirdPartyYoutTubeLib` that directly accesses a HashMap to retrieve video information and download videos.
+
+3. `CachedYoutubeClass` is a proxy class that implements `ThirdPartyYoutTubeLib`. It acts as an intermediary between the client and the `ThirdPartyYoutubeClass`. It caches the results of `listVideos()` and `getVideoInfo(int id)` methods to improve performance and reduce redundant operations.
+
+4. `CachedYoutubeClass` maintains a reference to an instance of `ThirdPartyYoutubeClass` and delegates the actual work to it when necessary (e.g., when the cache is empty or needs to be reset).
+
+5. The `Runner` class creates an instance of `ThirdPartyYoutubeClass` and an instance of `CachedYoutubeClass`, which wraps the `ThirdPartyYoutubeClass` instance. It then demonstrates the caching behavior by calling various methods on both instances.
+
+The Proxy pattern is used in this example to introduce a caching layer between the client and the actual service (`ThirdPartyYoutubeClass`). The `CachedYoutubeClass` acts as a proxy, intercepting requests and caching the results of certain operations to improve performance and reduce the load on the underlying service.
